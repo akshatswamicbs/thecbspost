@@ -20,4 +20,14 @@ mongoose.connect(
 app.get("/api/user/test",userRoutes);
 app.post("/signup",authRoutes);
 
+app.use((err,req,res,next)=>{
+    const statusCode=err.statusCode || 500;
+    const message=err.message || "Internal Error";
+    res.status(statusCode).json({
+        success:false,
+        statusCode,
+        message
+    })
+});
+
 app.listen(3000);
