@@ -9,7 +9,7 @@ import { CiSearch } from "react-icons/ci";
 
 export default function Header() {
   return (
-    <Navbar className='border-b-6 bg-gray-100'>
+    <Navbar className='border-b-6 bg-gray-200'>
         <Link to="/" className='self-center whitespace-nowrap text-sm sm:text-xl dark:text-white'>
             <span>The CBS Post</span>
         </Link>
@@ -22,6 +22,9 @@ export default function Header() {
           </Link>
           <Link to='/projects'>
             Projects
+          </Link>
+          <Link to='/signup'>
+            SignUp
           </Link>
         </div>
         <form className='flex gap-2'>

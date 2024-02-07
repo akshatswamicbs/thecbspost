@@ -18,7 +18,7 @@ mongoose.connect(
     });
 
 app.get("/api/user/test",userRoutes);
-app.post("/signup",authRoutes);
+app.post("/api/auth/signup",authRoutes);
 
 app.use((err,req,res,next)=>{
     const statusCode=err.statusCode || 500;
