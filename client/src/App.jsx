@@ -8,6 +8,10 @@ import SignUp from './pages/SignUp'
 import Projects from './pages/Projects'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import Videos from './pages/Videos'
+import StudyMaterial from './pages/StudyMaterial'
+import BMS from './pages/BMS'
+import BFIA from './pages/BFIA'
 
 export default function App() {
   return (
@@ -20,6 +24,10 @@ export default function App() {
       <Route path='/signin' element={<SignIn/>}></Route>
       <Route path='/signup' element={<SignUp/>}></Route>
       <Route path='/projects' element={<Projects/>}></Route>
+      <Route path='/videos' element={<Videos/>}></Route>
+      <Route path='/studymaterial' element={<StudyMaterial/>}></Route>
+      <Route path='/bmsmaterial' element={<BMS/>}></Route>
+      <Route path='/bfiamaterial' element={<BFIA/>}></Route>
     </Routes>
     <Footer/>
     </BrowserRouter>

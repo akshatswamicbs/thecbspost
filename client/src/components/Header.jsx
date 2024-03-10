@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <Navbar className='border-b-6 bg-gray-200'>
         <Link to="/" className='self-center whitespace-nowrap text-sm sm:text-xl dark:text-white'>
-            <span>The CBS Post</span>
+            <span>Insta Concepts</span>
         </Link>
         <div className='flex gap-4'>
           <Link to='/'>
@@ -20,11 +20,11 @@ export default function Header() {
           <Link to='/about'>
             About
           </Link>
-          <Link to='/projects'>
-            Projects
+          <Link to='/studymaterial'>
+            Study Material
           </Link>
-          <Link to='/signup'>
-            SignUp
+          <Link to='/videos'>
+            Videos
           </Link>
         </div>
         <form className='flex gap-2'>
@@ -35,9 +35,9 @@ export default function Header() {
           <Button className='h-10 w-10 pill' style={{backgroundColor:'black'}}>
           <FaMoon/>
           </Button>
-          <Link to="/signin">
+          <Link to="/signup">
             <Button className='bg-black text-white hover:bg-gray-100'>
-              Sign In
+              Sign Up
             </Button>
           </Link>
         </div>

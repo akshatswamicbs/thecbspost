@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from '../images/logomain.png'
+import logo from '../images/iclogo.jpg'
 import { Alert, Button, Label, Spinner, TextInput } from 'flowbite-react'
 import { FaBlackTie } from 'react-icons/fa'
 import { Link, useNavigate } from 'react-router-dom'
@@ -42,17 +42,15 @@ export default function SignUp() {
   }
   return (
     <div className='min-h-screen'>
-      <div className='flex gap-10'>
+      <div className='flex gap-1'>
         {/* left */}
-        <div style={{ marginLeft: '200px', textAlign:'center', width:'400px'}} className='flex-col gap-1 overflow-hidden mt-10'>
-          <img src={logo} style={{height:'250px'}}/>
-          <p className='mt-4'>The CBS Post is the newsletter of Shaheed Sukhdev College of Business Studies. Reaching out to an audience of over a thousand students, we aim to provide a 
-            platform for our readers to be exposed to ideas in the sphere of management
-            and build a sense of community within CBS, sharing
-             a proud legacy of the institution we call home.</p>
+        <div style={{ marginLeft: '200px', textAlign:'center'}} className='flex-col gap-1 mt-5'>
+          <img src={logo} style={{height:'250px',borderRadius:'45%'}}/>
+          <p className='mt-4' style={{paddingRight:'200px',textAlign:'center', height:'200px'}}>Insta Concepts: Your Ultimate Finance and Accounting Guide for CA Aspirants!
+           Master the intricacies of financial principles and accounting practices with our expert coaching and tutorials. Start your journey towards CA success today!</p>
         </div>
         {/* right */}
-        <div className='mt-12' style={{width:'400px',border:'2px 1px black'}}>
+        <div className='mt-12' style={{width:'400px',border:'2px 1px black', marginRight:'150px'}}>
           <form className='flex-cols' onSubmit={handleSubmit}>
             <div>
               <Label value='Username' className='text-xl'/>
