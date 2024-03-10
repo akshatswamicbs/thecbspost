@@ -42,7 +42,7 @@ export default function SignUp() {
   }
   return (
     <div className='min-h-screen'>
-      <div className='flex gap-1'>
+      <div className='flex gap-1' >
         {/* left */}
         <div style={{ marginLeft: '200px', textAlign:'center'}} className='flex-col gap-1 mt-5'>
           <img src={logo} style={{height:'250px',borderRadius:'45%'}}/>
