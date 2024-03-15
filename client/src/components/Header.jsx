@@ -26,11 +26,14 @@ export default function Header() {
           <Link to='/videos'>
             Videos
           </Link>
+          <Link to='/jobsportal'>
+            Jobs
+          </Link>
         </div>
-        <form className='flex gap-2'>
+        {/* <form className='flex gap-2'>
             <FaSearch className='h-7 w-7 mt-2'/>
             <TextInput type='text' placeholder='Search' className='hidden lg:inline' />
-        </form>
+        </form> */}
         <div className='flex gap-2'>
           <Button className='h-10 w-10 pill' style={{backgroundColor:'black'}}>
           <FaMoon/>

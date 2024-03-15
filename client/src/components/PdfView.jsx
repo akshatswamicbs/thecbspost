@@ -7,6 +7,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/b
 export default function PdfView(props) {
     const [numPages, setNumPages] = useState(null);
     const [pageNumber, setPageNumber] = useState(1);
+    const [scale, setScale] = useState(1);
     const pdfContainerRef = useRef(null); // Ref to control container dimensions
 
     const onDocumentLoadSuccess = ({ numPages }) => {
@@ -25,6 +26,16 @@ export default function PdfView(props) {
         }
     };
 
+    const zoomIn = () => {
+        setScale(scale + 0.1);
+    };
+
+    const zoomOut = () => {
+        if (scale > 0.1) {
+            setScale(scale - 0.1);
+        }
+    };
+
     return (
         <div className="wrap">
             <div className="controls">
@@ -33,6 +44,12 @@ export default function PdfView(props) {
                 </button>
                 <button onClick={nextPage} disabled={pageNumber === numPages}>
                     Next
+                </button>
+                <button onClick={zoomIn}>
+                    Zoom In
+                </button>
+                <button onClick={zoomOut}>
+                    Zoom Out
                 </button>
             </div>
             <div className="pdf-container" ref={pdfContainerRef}>
@@ -44,10 +61,11 @@ export default function PdfView(props) {
                 >
                     <Page
                         pageNumber={pageNumber}
-                        scaleMode="fitWidth" // Adjust scaleMode for desired fit within container
-                        renderAnnotationLayer={false} 
+                        scale={scale} // Pass the scale state to the Page component
+                        renderAnnotationLayer={false}
                         renderTextLayer={false} // Disable annotation layer rendering
-                        style={{ width: '80vw%', height: '40vh' ,marginBottom:'100px'}} // Set explicit dimensions
+                        style={{ width: '80vw', height: 'auto', marginBottom: '100px' }} // Set explicit dimensions
+                        className='pdf-canvas'
                     />
                 </Document>
             </div>

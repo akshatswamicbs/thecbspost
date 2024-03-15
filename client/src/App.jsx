@@ -13,6 +13,10 @@ import StudyMaterial from './pages/StudyMaterial'
 import BMS from './pages/BMS'
 import BFIA from './pages/BFIA'
 import Pdfviewer from './pages/Pdfviewer'
+import Jobs from './pages/Jobs'
+import JobOfferForm from './pages/JobOfferForm'
+import JobSeekerForm from './pages/JobSeekerForm'
+import Admin from './pages/Admin'
 
 export default function App() {
   return (
@@ -30,6 +34,10 @@ export default function App() {
       <Route path='/bmsmaterial' element={<BMS/>}></Route>
       <Route path='/bfiamaterial' element={<BFIA/>}></Route>
       <Route path='/pdfviewer' element={<Pdfviewer/>}></Route>
+      <Route path='/jobsportal' element={<Jobs/>}></Route>
+      <Route path="/job-seeker" element={<JobSeekerForm/>} />
+      <Route path="/job-offer" element={<JobOfferForm/>} />
+      <Route path="/admindashboard" element={<Admin/>} />
     </Routes>
     <Footer/>
     </BrowserRouter>

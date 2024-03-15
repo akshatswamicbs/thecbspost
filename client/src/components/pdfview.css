@@ -1,28 +1,53 @@
-.pdf-container{
+.pdf-container {
     display: flex;
     justify-content: center;
     user-select: none;
-    border: 2px solid black;
-    height: 100vh;
-    margin-bottom: 200px;
-    
+    height: 90vh; /* Adjust the height as needed */
+    overflow: auto; /* Add overflow property to enable scrolling */
+    border: 1px solid #ccc; /* Add border to the container */
+    margin-bottom: 20px; /* Adjust margin as needed */
+    padding: 10px; /* Add padding for spacing */
 }
 
-
-.wrap{
-    margin: auto 5em;
+canvas {
+    border: 1px solid #ccc; /* Add border to the canvas */
+    border-radius: 5px; /* Add border radius for styling */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    max-width: 100%; /* Ensure canvas doesn't exceed container width */
+    height: auto; /* Allow canvas height to adjust proportionally */
 }
 
-.controls{
+/* Additional styling for the wrap class */
+.wrap {
+    margin:auto;
+    max-width: 800px; /* Adjust maximum width as needed */
+}
+
+.controls {
     margin: 20px;
+    margin-bottom: 2px;
     justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-
-.controls button{
-    padding: 1rem 2rem;
-    background-color: gray;
-    color: black;
+.controls button {
+    padding: 10px 20px;
+    background-color: #57595c;
+    color: #fff;
+    border: none;
     border-radius: 5px;
-    margin-right: 2rem;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.controls button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.controls button:hover {
+    background-color: #34373a;
 }

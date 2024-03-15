@@ -51,9 +51,9 @@ export default function SignUp() {
         </div>
         {/* right */}
         <div className='mt-12' style={{width:'400px',border:'2px 1px black', marginRight:'150px'}}>
-          <form className='flex-cols' onSubmit={handleSubmit}>
+          <form className='flex-cols' onSubmit={handleSubmit}  style={{fontSize:"30px"}}  >
             <div>
-              <Label value='Username' className='text-xl'/>
+              <Label value='Username' className='text-xl'    />
               <TextInput type='text' placeholder='Enter your username' id='username'  onChange={handleChange} />
             </div>
             <div>
@@ -93,3 +93,4 @@ export default function SignUp() {
     </div>
   )
 }
+

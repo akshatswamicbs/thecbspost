@@ -5,12 +5,12 @@ import {BsDiscord, BsFacebook, BsGithub, BsInstagram, BsX} from 'react-icons/bs'
 
 export default function FooterCom() {
   return (
-    <Footer container className='border border-t-8 border-gray-500'>
+    <Footer container className='border border-t-8 border-gray-500 '>
         <div className='w-full max-w-7xl mx-auto'>
             <div className='grid w-full justify-between sm:flex md:grid'>
                 <div className=''>
                 <Link to="/" className='self-center whitespace-nowrap text-sm sm:text-xl dark:text-white'>
-            <      span>The CBS Post</span>
+            <      span>Insta Concepts</span>
                 </Link>
                 </div>
                 <div className='grid grid-cols-2 gap-3 sm: mt-4 sm:grid-cols-3 justify-between'>
@@ -73,7 +73,7 @@ export default function FooterCom() {
             <div className=''>
                 <Footer.Copyright
                 href='#'
-                by='The CBS Post'
+                by='Insta Concepts'
                 year={new Date().getFullYear()}/>
             </div>
             <div className='flex gap-6'>
