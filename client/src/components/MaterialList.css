@@ -1,0 +1,46 @@
+.material-list-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .material-list-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .material-list {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .material-list table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .material-list th, .material-list td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  .material-list th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .material-list tbody tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .material-list a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .material-list a:hover {
+    text-decoration: underline;
+  }
+  

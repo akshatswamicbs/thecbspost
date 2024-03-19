@@ -1,0 +1,59 @@
+.study-material-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .study-material-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .study-material-header h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+  }
+  
+  .section-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .section-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .section-card h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .section-card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .section-card button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .section-card button:hover {
+    background-color: #0056b3;
+  }

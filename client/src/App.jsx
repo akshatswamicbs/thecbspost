@@ -16,7 +16,13 @@ import Pdfviewer from './pages/Pdfviewer'
 import Jobs from './pages/Jobs'
 import JobOfferForm from './pages/JobOfferForm'
 import JobSeekerForm from './pages/JobSeekerForm'
-import Admin from './pages/Admin'
+import AdminSeekerForm from './pages/AdminSeekerForm'
+import AdminVideosForm from './pages/AdminVideosForm'
+import AdminGiverForm from './pages/AdminGiverForm'
+import SubjectList from './components/SubjectList'
+import MaterialList from './components/MaterialList'
+import AdminStudyMaterial from './pages/AdminStudyMaterial'
+
 
 export default function App() {
   return (
@@ -37,7 +43,13 @@ export default function App() {
       <Route path='/jobsportal' element={<Jobs/>}></Route>
       <Route path="/job-seeker" element={<JobSeekerForm/>} />
       <Route path="/job-offer" element={<JobOfferForm/>} />
-      <Route path="/admindashboard" element={<Admin/>} />
+      <Route path="/admindashboard/seekerform" element={<AdminSeekerForm/>} />
+      <Route path="/admindashboard/giverform" element={<AdminGiverForm/>} />
+      <Route path="/admindashboard/videos" element={<AdminVideosForm/>} />
+      <Route path="/admindashboard/studymaterial" element={<AdminStudyMaterial/>} />
+      <Route path="/subjects/:sectionId" element={<SubjectList sectionId='sectionId' />}/>
+      <Route path="/materials/:subjectId" element={<MaterialList/>} />
+
     </Routes>
     <Footer/>
     </BrowserRouter>
